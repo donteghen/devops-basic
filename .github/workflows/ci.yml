@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: npx jest
 
       - name: Build Docker image
         run: docker build -t devops-basic .
